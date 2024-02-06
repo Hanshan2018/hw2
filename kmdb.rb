@@ -70,13 +70,25 @@
 # Delete existing data, so you'll start fresh each time this script is run.
 # Use `Model.destroy_all` code.
 # TODO!
+Movie.destroy_all
+Studio.destroy_all
+Actor.destroy_all
+Role.destroy_all
 
 # Generate models and tables, according to the domain model.
 # TODO!
+# see db/migrate folder
 
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
 # TODO!
+
+new_movie = Movie.new
+new_movie [""] = "Apple"
+new_movie ["city"] = "Cupertino"
+new_movie ["state"] = "CA"
+new_movie ["url"] = "https://www.apple.com"
+new_company.save
 
 # Prints a header for the movies output
 puts "Movies"
